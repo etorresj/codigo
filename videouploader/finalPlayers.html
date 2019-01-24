@@ -1,0 +1,151 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Untitled</title>
+        <link rel="author" href="humans.txt">
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <script language="javascript" type="text/javascript">
+        
+	    	$(document).ready(function(){
+          var ooyalaPlayer;
+
+			    $("div").each(function(i){ //construct ooyala player for each div
+			      var idVideo;
+            var thisContent=this;
+            
+			      if($(thisContent).attr("data-video-account")) {  //if div contain account attr
+              idVideo = $(thisContent).attr("data-video-contentid");//getting video id
+              labelVideo = $(thisContent).attr("data-video-label"); //getting video label
+              accountVideo=$(thisContent).attr("data-video-account"); //getting account
+              
+              
+              if($(this).attr('id')) //if exists id attribute
+                var tempId = $(this).attr('id');
+              else { // don't exists id attr
+                $(this).attr('id', 'idTemp'+i);  //setting temporal id
+                var tempId='idTemp'+i;
+              }
+              
+              var idPlayer=$(thisContent).attr("data-video-player"); //getting id Player 
+              var style= $(thisContent).attr("data-video-style");        //getting video style
+
+              //Video sizes
+              var vSizes=new Array();
+              vSizes['home']=new Array(); //2D array
+              vSizes['home']['w']="400px";
+              vSizes['home']['h']="225px";
+
+              vSizes['article']=new Array(); //2D array
+              vSizes['article']['w']="654px";
+              vSizes['article']['h']="368px";
+
+              vSizes['Custom-480x270']=new Array(); //2D array
+              vSizes['Custom-480x270']['w']="480px";
+              vSizes['Custom-480x270']['h']="270px";
+
+              vSizes['Custom-300x340']=new Array(); //2D array
+              vSizes['Custom-300x340']['w']="300px";
+              vSizes['Custom-300x340']['h']="340px";
+
+              vSizes['Custom-620x349']=new Array(); //2D array
+              vSizes['Custom-620x349']['w']="620px";
+              vSizes['Custom-620x349']['h']="349px";
+
+              vSizes['Custom-645x300']=new Array(); //2D array
+              vSizes['Custom-645x300']['w']="645px";
+              vSizes['Custom-645x300']['h']="300px";
+
+              vSizes['Custom-645x400']=new Array(); //2D array
+              vSizes['Custom-645x400']['w']="645x";
+              vSizes['Custom-645x400']['h']="400px";
+
+              vSizes['Custom-654x400']=new Array(); //2D array
+              vSizes['Custom-654x400']['w']="654px";
+              vSizes['Custom-654x400']['h']="400px";
+
+              vSizes['Custom-654x480']=new Array(); //2D array
+              vSizes['Custom-654x480']['w']="654px";
+              vSizes['Custom-654x480']['h']="480px";
+
+              vSizes['Custom-1000x563']=new Array(); //2D array
+              vSizes['Custom-1000x563']['w']="1000px";
+              vSizes['Custom-1000x563']['h']="563px";
+
+              vSizes['Custom-1000x645']=new Array(); //2D array
+              vSizes['Custom-1000x645']['w']="1000px";
+              vSizes['Custom-1000x645']['h']="645px";              
+
+              //setting div size
+              $(thisContent).css({
+                'width': vSizes[style]['w'],
+                'height': vSizes[style]['h']
+              });
+       
+              //loading ooyala script
+              var tagjs = document.createElement("script");
+              tagjs.setAttribute("type", "text/javascript");
+              tagjs.setAttribute("id", "jsOoyala"+i);
+              tagjs.setAttribute("src", "http://player.ooyala.com/v3/"+idPlayer+"?namespace=JYPlayer"+i);  
+              document.getElementsByTagName("head")[0].appendChild(tagjs);
+              //end loading ooyal script
+              
+               //waiting for ooyala script before construct player
+               $('#jsOoyala'+i).load(function() {
+                  window['JYPlayer' + i].ready(function() { window['JYPlayer' + i].Player.create(tempId, idVideo,{
+        
+                      
+                      "vast":{
+                            tagUrl: "http://pubads.g.doubleclick.net/gampad/ads?sz=480x360&iu=/8013/"+accountVideo+"/"+labelVideo+"&ciu_szs&impl=s&gdfp_req=1&env=vp&output=xml_vast2&unviewed_position_start=1&url=[page-url]&correlator=[timestamp]",
+                            height:'100%',
+                        width:'100%',
+                        adLayout: 'adjusted',
+                        showInAdControlBar: 'true',
+                        playWhenAdClick: 'true',
+                        showAdMarquee: 'true',
+                         }  
+                      
+        
+                       }
+
+
+                    ); 
+                  }); // window['JYPlayer' + i].ready
+               
+
+               }); // $('#jsOoyala'+i).load(
+            
+
+
+            } //end if div contain account attr
+			   }); //end construct ooyala player for each div
+			   
+			}); //end document ready
+	   
+
+	 	</script>
+
+    </head>
+    <body>
+        
+
+<p>These are the possible tags you would return from the uploader</p>
+DENVER POST (HOME - NEWS)
+<div  data-video-style="home" data-video-label="News" data-video-account="denverpost.com" data-video-contentid="F2b3Qybjqoa2YBNLj8af3wM0wEe2N3ay" data-video-player="fce2cf476df14253a15351f1727031b4"></div>
+<br>
+DENVER POST (ARTICLE - SPORTS)
+<div  data-video-style="article" data-video-label="Sports" data-video-account="denverpost.com" data-video-contentid="F2b3Qybjqoa2YBNLj8af3wM0wEe2N3ay" data-video-player="fce2cf476df14253a15351f1727031b4"></div>
+<br>
+
+SAN JOSE MERCURY
+<div  data-video-style="article" data-video-label="Lifestyle" data-video-account="mercurynews.com" data-video-contentid="ByY2w0bTpHURYkTQ3-ooDAnR5SycMKW1" data-video-player="e002df41365344a388d94f4d8d83f644"></div>
+<br>
+<!--CONTRA COSTA
+<div  data-video-style="article" data-video-label="News" data-video-account="contracostatimes.com" data-video-contentid="E2eXAzbTpABD0Azx_P6hGdvyn4e6BFt9" data-video-player="5fe5c4aab4e3488f9636aeb0ccfacdfb"></div>
+<BR>
+<div>In this div doesn't  load any video</div>
+-->
+ 
+ </body>
+</html>
