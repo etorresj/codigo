@@ -1,0 +1,253 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1">
+	<title>Phenix Carousel</title>
+	<link rel="stylesheet" href="css/phenix.css">	
+    <script src="js/jquery-1.9.1.min.js"></script> 
+    <!--<script src="http://cdnjs.cloudflare.com/ajax/libs/zepto/1.1.2/zepto.min.js"></script>-->
+	<!--<script src="assets/js/jquery-1.11.0.min.js"></script>-->
+<style>
+body{
+	margin: 0px;
+	padding: 0px;
+	width: 960px;
+}
+
+.article {
+	display:block;
+	margin: 10px;
+	height: 150px;
+	padding: 20px;
+	background: #3498DB;
+	border-radius: 3px;
+	height: auto;
+}
+.article-one {
+	display:block;
+	margin: 10px;
+	height: 150px;
+	background: #be3939;
+	border-radius: 3px;
+	padding: 20px;
+}
+.phenix-item img{
+	display: block;
+	width: 100%;
+}
+.phenix-item .article-one img{
+	float: left;
+	height: 150px;
+	width: 190px;
+}
+.article-one a{
+	text-align: right;
+}
+.article a{
+	text-align: right;
+}
+
+.article-json {
+	display:block;
+	margin: 10px;
+	height: 150px;
+	background: #415B76;
+	border-radius: 3px;
+}
+.phenix-prev, .phenix-next, .phenix-prev-one, .phenix-next-one{
+ 	padding: 17px 16px;;
+ 	position: relative;
+ 	display: inline-block;
+ 	top:-160px;
+}
+.phenix-prev{
+ 	background-image: url(images/left-arrow-carrousel.jpg);
+ 	float: left; 
+ 	margin-left: -35px;
+}
+.phenix-next{
+ 	background-image: url(images/right-arrow-carousel.jpg);
+ 	float: right;
+ 	margin-right: -35px;
+}
+.phenix-prev-one{
+ 	background-image: url(images/left-arrow-carousel-one.jpg);
+ 	float: left; 
+ 	margin-left: -35px;
+}
+.phenix-next-one{
+ 	background-image: url(images/right-arrow-carousel-one.jpg);
+ 	float: right;
+ 	margin-right: -35px;
+}
+h3{
+	margin: 0;
+	color: #FFF;
+}
+.carousel-wrap{
+	border: solid black thin;
+	padding: 0px 35px;
+}
+
+</style>
+</head>
+<body>
+
+		<div class="carousel-wrap">
+			<div class="phenix local">
+				<div class="article">
+					<img src="images/promo.jpg" alt="promo" width="100" height="100">
+					<span class="azul">Paquete Saludable 3</span>
+					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum</p>
+					<a href="">Ver Mas</a>
+				</div>
+				<div class="article"><h3>2</h3></div>
+				<div class="article"><h3>3</h3></div>
+				<div class="article"><h3>4</h3></div>
+				<div class="article"><h3>5</h3></div>
+				<div class="article"><h3>6</h3></div>
+				<div class="article"><h3>7</h3></div>
+			</div>
+			<a href="" class="phenix-prev"></a>
+			<a href="" class="phenix-next"></a>
+		</div>
+		
+		
+		<div class="carousel-wrap">
+			<div class="phenix one">
+				<div class="article-one">
+					<img src="images/loultimo.jpg" alt="loultimo">
+					<h3>ENFERMEDADES DE TRANSMISIÓN SEXUAL (ETS)</h3>
+					<p>
+						También llamadas enfermedades venéreas, son enfermedades infecciosas que se pueden contagiar por contacto sexual. Algunas se pueden transmitir también por vía no sexual, pero representan una minoría del número total de casos.
+Varios tipos de enfermedades de transmisión sexual pueden llegar a ser epidémicas, incluidas la    gonorrea, la uretritis no gonocócica, el herpes genital, las verrugas genitales (condilomas acuminados), la sarna (escabiosis) y las infecciones uretrales y vaginales causadas por la bacteria Chlamydia trachomatis, el protozoo Tricomonas y
+					</p>
+					<a href="">seguir leyendo</a>
+				</div>
+				<div class="article-one"><h3>2</h3></div>
+				<div class="article-one"><h3>3</h3></div>
+				<div class="article-one"><h3>4</h3></div>
+				<div class="article-one"><h3>5</h3></div>
+				<div class="article-one"><h3>6</h3></div>
+				<div class="article-one"><h3>7</h3></div>
+			</div>
+			<a href="" class="phenix-prev-one"></a>
+			<a href="" class="phenix-next-one"></a>
+		</div>
+		
+		
+		<div class="phenix json"></div>
+
+		<div class="phenix-nav"></div>
+
+
+
+
+		
+		
+
+
+	<script src="js/phenix.js"></script>
+	<script>
+	$(document).ready(function($) {
+		$(".local").phenix({
+			responsiveItems : [
+				[320, 3],
+		        [480, 3],
+		        [600, 3],
+		        [700, 3],
+		        [800, 3]
+		      ]
+		});
+		$(".one").phenix({
+			responsiveItems : [
+				[320, 1],
+		        [480, 1],
+		        [600, 1],
+		        [700, 1],
+		        [800, 1]
+		      ]
+		});
+
+		$(".center").phenix({
+			scrollPerPage: true,
+			centerItem:true,
+			siblingsMargin: 70,
+			responsiveItems : [
+				[320, 1],
+		        [480, 1],
+		        [700, 3],
+		        [1000, 5]
+		      ],
+		    itemStyle:{
+		    	marginRight:0,
+		    	marginRightPercent:0
+		    }
+		});
+
+
+		$(".json").phenix({
+			scrollPerPage: true,
+			jsonPath: "json/content.json",
+			jsonLazyLoad:true,
+			jsonStructure: letsBuildStructure,
+			responsiveItems : [
+				[320, 1],
+		        [480, 3],
+		        [600, 5],
+		        [700, 6],
+		        [800, 7]
+		      ]
+		});
+
+		$(".phenix-next").click(function(e){
+			e.preventDefault();
+			$(".local").trigger('phenix-next')
+			//$(".json")[0].c()
+		})
+
+		$(".phenix-prev").click(function(e){
+			e.preventDefault();
+			$(".local").trigger('phenix-prev')
+		})
+		$(".phenix-next-one").click(function(e){
+			e.preventDefault();
+			$(".one").trigger('phenix-next-one')
+			//$(".json")[0].c()
+		})
+
+		$(".phenix-prev-one").click(function(e){
+			e.preventDefault();
+			$(".one").trigger('phenix-prev-one')
+		})
+
+		$('.phenix-item').click(function(){
+			console.log(this.getIndex());
+		})
+
+		function letsBuildStructure(data){
+	        var html="",header,text,link,imgDestkop,imgTablet,result;
+	        header = "<h3>"+ data.header +"</h3>";
+	        text = "<p>"+ data.text +"</p>";
+	        link = "<a href=\"\">"+ data.link +"</a>";
+	        image = "<img src=\"" + data.imgDesktop + "\">"
+	        html += header;
+	        result = $("<div class=\"article-json\"></div>").append(html);
+	        return result;
+        }
+
+	});
+
+
+	</script>
+
+</body>
+</html>
+
+
+ 
+
+
+

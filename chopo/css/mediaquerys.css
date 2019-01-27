@@ -1,0 +1,749 @@
+/*
+    MEDIA QUERY
+*/
+
+@media screen and (max-width: 980px){
+	#contact, #submenu, #menu, #content, #footmenu, #footinfo, #seccion3{
+		width:100%;
+		margin: 0px auto;
+		height: 100%;
+	}
+	#submenu, #content, #footmenu, #footinfo, #seccion3{
+		padding: 2%;
+		width:96%;
+	}
+	#contactwrap, #submenuwrap, #menuwrap, #contentwrap, #footinfowrap, #footmenuwrap, #footfinish, #footfinish, #seccion3wrap {
+		min-width: 100%;
+	}
+	#privilegios, #left-menu, #navegador .texto {
+		display: none;
+	}
+	#slider1wrap{
+		margin-top:0px; 
+	}
+	#left-menu.completo {
+		display: block;
+	}
+	#right-content, #left-content{
+		width: 100%;
+	}
+	#search{
+		width: 100%;
+		margin: -7px 0px -5px 0px;
+		text-align: center;
+		padding: 8px 0px;
+	}
+	#edomex{
+		border-left: none;
+		width: auto;
+		margin-top: -2px;
+		margin-left: 0px;
+		text-align: center;
+	}
+	#contacto{
+		right: 0px;
+		top: 0px;
+		position: absolute;		
+	}	
+	#contact{
+		margin: 0px;
+		padding: 0px;
+	}
+	#menuwrap{
+		padding: 0px;
+		margin-bottom: 0px;
+		height: auto;
+	}
+	#submenuwrap{
+		padding: 0px;
+		
+	}
+	#chopologo {
+		text-align: center;
+		width: 100%;
+	}
+	#content-in ul li {
+		margin-left: 20px;
+	}
+	#content-in p {
+		text-align: left;
+	}
+	#content .boxverde{
+		width: 41%;
+		padding: 10px 4%;
+		height: 100%;
+		margin-right: 0px;
+	}
+	#content .boxverde.der{
+		margin-left: 2%;
+	}
+	#content .boxverde h2{
+		width: auto;
+	}
+	#content .boxazul{
+		height: 145px;
+		width: 100%;;
+		position: relative;
+		top: 0px;	
+	}
+	#content .boxazul ul li{
+		display: inline-block;
+		width: 30px;
+		height: 30px;
+		margin: 2px 10px 0px 10px;
+	}
+	#content .boxazul{
+		text-align: center;
+	}
+	
+	#footinfo{
+		width: 92%;
+		text-align: center;
+	}
+
+	
+	
+	#footinfo #descarga{
+		float: none;
+		border-left: none;
+		border-top: #b0d5eb solid 2px;
+		margin-top: 10px;
+		padding: 10px 0px 0px 0px;
+		text-align: center;
+	}
+	#footinfo #descarga table{
+		margin: 0px auto;
+		padding: 0px;
+		text-align: center;
+	}
+	#footinfo #descarga .chopo_foot{
+		margin-left: 30px;
+		margin-top: -5px;
+	}
+	#footinfo #descarga img{
+		margin-top: 10px;
+	}
+	#chopologo img{
+		margin-bottom: -34px;
+		margin-left: 0px;
+	}
+	#menu #menuprincipal ul li.plusmenu{
+		display: block;
+	}
+	#nav-mobile{
+        margin-top: -82px;
+    }   
+	.privilegios{
+		background-color: #f5f6f6;
+		padding: 50px 20px;
+	}
+	.privilegios h1{
+		margin-left: 0px;
+	}	
+	#right-content .cuadro-gris{
+		width: 29%;
+		height: 220px;
+		float: left;
+		margin: 20px 1%;
+		padding: 10px 1%;
+		font-size: 14px;
+		text-align: left;
+		line-height: 15px;
+	}
+	#right-content .luispasteur{
+		display: inline-block;
+		position: relative;
+		margin: 0px 25%;
+	}
+	#right-content .botones-pasteur{
+		text-align: center;
+		width: 100%;
+	}
+	#navegador{
+		margin-bottom: 2%;
+		padding: 2px 2% 0px 2%;
+		width:96%;
+		height: auto;
+		 text-align: right;
+	}
+	#navegador .menu-horizontal{
+		display: none;
+	}
+	#navegador ul.breadscrumb{
+		float: none;
+		clear: both;
+		display: inline-block;
+		text-align: right;
+		margin: 0px 0px;
+		padding: 0px;
+		background-image: none;
+	}
+	#navegador ul.breadscrumb li img{
+		width: 30px;
+		height: 30px;
+		margin: 0px auto;
+	}
+	#right-content .sitios-interes{
+		text-align: center;
+		display: block;
+	}
+	.sitios-interes img{
+		margin: 0px auto;
+		float: block;
+		padding: 0px;
+	}
+	#modover, .paginacion, .select{
+		display:block;
+		float: none;
+		clear: both;
+		text-align: center;
+		margin: 5px auto;
+	}
+	
+    /* mostramos #nav-mobile */
+    #nav-mobile{ display: block; }
+
+    /* Fijamos nuestro nav en 100% ancho y dejamos de flotarlo  */
+    #menuprincipal{
+        width: 100%;
+        float: none;
+        padding: 0px;
+    }
+        /* Convertimos nuestra lista de enlaces en un menú horizontal */
+        #menuprincipal ul{
+            -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.5);
+            -moz-box-shadow: 0 1px 2px rgba(0,0,0,.5);
+            box-shadow: 0 1px 2px rgba(0,0,0,.5);
+            max-height: 0;
+            overflow: hidden;
+        }
+
+	.left-menu-info{	
+		margin-top: 0px;
+		background-color: #0077c0;
+		width: 95%;
+		padding: 10px;
+		float: left;
+		clear: both;
+		display: block;
+		position: relative;
+	}
+	.left-menu-info, #left-menu.completo, .gogglemap{	
+		margin-bottom: 20px;
+		width: 95%;
+		padding: 10px;
+		float: left;
+		clear: both;
+		display: block;
+		position: relative;
+	}
+	.gogglemap{
+		border:0; 
+		position:relative; 
+		top:0px;
+	}
+	.cuadro-blanco-info{
+		margin-top: 15px;
+	}
+	#tabContenido{
+		position: relative;
+	}	
+	#tabContenido .fondo-blanco{
+		margin-bottom: 20px;
+		padding-top: 50px;
+	}
+	#tabContenido .fondo-blanco .img .fecha-verde{
+		margin-top: -65px;
+	}
+	
+	    /* mostramos #nav-mobile-sub */
+    #nav-mobile-sub{ display: block; }
+
+    /* Fijamos nuestro nav en 100% ancho y dejamos de flotarlo  */
+    #left-menu-nav{
+        width: 100%;
+        float: none;
+        padding: 0px;
+        display: block;
+        margin: 0px; 
+        text-align: center;
+    }
+        /* Convertimos nuestra lista de enlaces en un menú horizontal */
+        #left-menu-nav ul{
+            max-height: 0;
+            overflow: hidden;
+        }
+            /* estilos para los LI del menu */
+            #left-menu-nav li{
+                float: none;
+                width: 100%;
+                text-align: center;
+                padding: 0px 0px;
+                margin-left: -10px;
+            }
+			#menu #left-menu-nav ul li{
+				margin-left: 0px;
+				width: 100%;
+				
+			}
+
+            /* Quitamos el borde del ultimo item del menú */
+            #left-menu-nav li:last-child{ border-bottom: 0;}
+                #left-menu-nav a li {
+                    height: auto;
+                    line-height: normal;
+                    padding: 15px 0px;
+                    text-decoration: none;
+                     /* border-top: solid thin #47A3DA; */
+                }
+                #left-menu-nav a:hover li{
+                    text-decoration: none;
+                }
+                #left-menu-nav a:hover li {
+                	width: 102%;
+	                background-color: #47A3DA;
+	                color: white;	                
+	                text-decoration: none;
+                }
+
+        /* Agregamos una animación al despligue del menú */
+        #left-menu-nav ul.open-menu{
+            max-height: 700px;
+            -webkit-transition: max-height .4s;
+            -moz-transition: max-height .4s;
+            -ms-transition: max-height .4s;
+            -o-transition: max-height .4s;
+            transition: max-height .4s;
+        }
+        #tabContenido .fondo-blanco .img .fecha-verde{
+			position: relative;
+			right: 0px;
+			padding: 5px 10px 5px 24px;
+			margin-top: 0px;
+			color: white;
+			text-align: center;
+			font-size: 20px;
+			background-color: #7AC142;
+			background-repeat: no-repeat;
+			background-image: none;
+			margin:-40px 0px 10px 0px;
+			border-radius: 3px;
+		}
+		 #tabContenido .fondo-blanco .img{
+		 	margin-bottom: 20px;		
+		}
+		#tabContenido .fondo-blanco .img img{
+		 	margin-top: 0px;		
+		}
+		#tabContenido .fondo-blanco h1{
+			margin-top: 20px;
+			font-size: 120%;
+		}
+		#tabContenido .fondo-blanco h2{
+			font-size: 90%;
+		}	
+		.tabOn, .tabOff, .tabHover
+		{
+			padding: 5px 20px;
+			position:relative;
+			display: block;
+			cursor:pointer;
+			text-align:center;
+			color: white;
+			border-radius: 3px;
+			margin-bottom: 10px;
+		}		
+		.prod-box{
+			width: 28%;
+			height: auto;
+			padding: 10px; 
+			margin: 5px;
+			background-color: #fff;
+			float: left;
+		}	
+		#left-content{
+			display: block;
+			float: left;
+			width: 96%;
+		}
+		#left-content .imprimir_cupon{
+			margin: 20px 0px;
+		}
+		#tabContenido .fondo-blanco a{
+			float: right;	
+			top: -20px;
+			margin: 0px;
+			display: block;
+		}
+		.resultados-bloque{
+			width: 100%;
+			display: block;
+			margin: 10px 10px;
+			text-align: left;
+			float: left;
+		}
+		.resultados-bloque .titleimg img{
+			width: 300px;
+			margin-top: 5px;
+		}
+		.resultados-bloque .descripcion, .resultados-bloque .descripcion .info{
+	height: auto;
+}
+		.infoconsulta .imagen, .infoconsulta .consulta{
+			height: auto;	
+		}
+		#footmenu #calidad{
+			position: relative;
+		}
+		.phenix-prev, .phenix-next, .phenix-prev-one, .phenix-next-one{
+		 	display: none !important;
+		 }
+}
+
+
+
+
+@media screen and (max-width: 690px) { 
+	#slider1wrap{
+		display: none;
+	}
+	
+	#telefono{
+
+		position: relative;
+		float: left;
+	}
+	#edomex{
+		text-align: left;
+		padding-left: 4%;
+	}
+	
+	#contacto img{
+		width: 100px;
+		height: 25px;
+	}
+	
+	
+	/* SubMenu */	
+	
+	
+	
+	#chopologo img{
+		width: 140px;
+		height: 79px;
+	}
+
+	
+	
+	
+	/* Menu */
+	#slider1wrap{
+		margin:0px; 
+	}
+	#content .boxverde, #content .boxazul{
+		position: relative;
+		width: 100%;
+		height: 110px;
+		float: left;
+		border-radius: 10px;
+		margin: 0px 0px 25px 0px;
+	}
+	#content{
+		margin-top: 0px;
+	}
+	#content .boxverde{
+		width: 92%;
+		padding: 10px 4%;
+		margin-right: 0px;
+		height: 100%;
+	}
+	#content .boxverde.der{
+		margin-left: 0%;
+	}
+	#content .boxverde h2{
+		width: auto;
+	}
+	#content .boxazul{
+		height: 145px;
+		width: 100%;;
+		position: relative;
+		top: 0px;	
+	}
+	#content .boxazul ul li{
+		display: inline-block;
+		width: 30px;
+		height: 30px;
+		margin: 2px 10px 0px 10px;
+	}
+	#content .boxazul{
+		text-align: center;
+	}
+	
+	#footinfo #descarga table{
+		margin: 0% auto;
+		width: 100%;
+	}
+	
+	
+	
+	
+
+	
+	
+	
+	#footinfo #suscribete {
+	text-align: center;
+	}
+	#footinfo #suscribete .suscrib-texto, #footinfo #suscribete .suscrib-input,#footinfo #suscribete .suscrib-boton{
+		width: 100%;
+	}
+	
+	#footinfo #suscribete .suscrib-input img, #footinfo #suscribete .suscrib-input input[type="text"]{
+		float: none;
+		display: block;
+		position: relative;
+		margin: 15px auto;
+	}
+	#footinfo #suscribete .suscrib-boton .enviarimage, #footinfo #suscribete .letrapequena{
+		float: none;
+		position: relative;
+	}
+	#footinfo #suscribete .suscrib-boton .enviarimage{
+		margin-left: 25px;
+	}
+	/* Footer */
+	#footmenu #nuestrosestudios{
+		padding-right: 20px;
+		border-right: none;
+	}
+	#footmenu #unidades{
+		margin-top: 20px;
+	}
+	#footmenu #calidad{
+		float: left;
+		display: block;
+		width: 100%;
+		margin-top: 25px;
+		text-align: center;
+		margin-left: 0px;
+	}
+	#footmenu #calidad table { 
+	    border-spacing: 10px;
+	    border-collapse: separate;
+	    margin: 0px auto;
+	    width: 100%;
+	    position: relative;
+	}
+	#footmenu .tablefinal, #footmenu #chatfoot { 
+	    position: relative !important;
+	    bottom: 0px;
+	    margin: 0px;
+	}
+	#footmenu #chatfoot { 
+	    margin-top: 20px;
+	}
+	#footinfo #descarga img{
+		margin-top: 0px;
+	}
+	#footmenu .tablefinal{
+		float: none;
+		position: relative;
+		margin: 15px auto 0px auto;
+	}
+	#footinfo #suscribete{
+		width: 100%;
+		padding: 0px;
+	}		
+	#footinfo #descarga{
+		width: 100%;
+	}
+	#footinfo #descarga p{
+		margin-bottom: 10px;
+	}
+	#footinfo #descarga .chopo_foot{
+		float: none;
+		display: inline-block;
+		margin: 10px auto 0px auto;	
+	}
+	
+	#footinfo #descarga table img{
+		width: 100%;
+	}
+	.privilegios input[type="text"]{
+		float: none;
+		width: 98%;
+		margin-left: 0px;
+		margin-top: 10px;
+	}
+	#content-in .privilegios .privilegios-form p, #content-in .privilegios p{
+		text-align: left;
+		margin-right: 0%;
+	}
+	#right-content .cuadro-gris{
+		width: 90%;
+		height: auto;
+		float: left;
+		margin: 10px 0px;
+		padding: 10px 5%;
+		font-size: 14px;
+		text-align: left;
+		line-height: 15px;
+	}
+	.privilegios h2{
+		color: #0077c0;
+		font-size: 80%;
+		font-weight: normal;
+	}	
+	#right-content .luispasteur{
+		width: 100%;
+		margin: 0px 0%;
+	}
+	#nav-mobile{ 
+		display: block; 
+		top:10px; 
+	}
+	#footmenu{
+		text-align: center;
+	}
+	#footmenu #nuestrosestudios, #footmenu #unidades{
+		text-align: center;
+		padding: 0px;
+		margin: 0px auto;
+	}
+	#footmenu #nuestrosestudios ul{
+		margin:0px auto;
+		text-align: center;
+	}
+	#footmenu span.azul{
+		margin: 20px auto;	
+		text-align: center;
+		width: 100%;
+	}
+	#footmenu ul li{
+		margin-right: 0px;
+	}
+	#footinfo #suscribete .suscrib-input input[type="text"]{
+		width: 70%;
+	}
+	#footinfo #suscribete input[type="button"]{
+		width: 85%;
+	}
+	#tabContenido .fondo-blanco .img{
+		text-align: center;
+		margin-left: 0px;
+		width: 100%;
+	}
+	#tabContenido .fondo-blanco .img img{
+		width:100%;
+		display: block;
+	}
+	.tarjeta-privilegios img.cupones{
+		width: auto;
+		height: auto;
+		margin: 0px auto;
+		margin-left: 0px;	
+	}
+	#modover, .paginacion{
+		display: block;
+	}
+	.paginacion{
+		display: none;
+	}
+	#modover{
+		display: block;
+		clear: both;
+	}
+	.prod-box{
+		width: 88%;
+	}
+	.prod-box-list{
+		height: auto;
+		width: 92%;
+		margin: 3px;
+		padding: 5px 10px;
+		background-color: #dedfe0;
+	}
+	.prod-box-list.title, #content-in .prod-box-list p.num{
+		display: none;
+	}
+	#content-in .prod-box-list .titleazulpromo, #content-in .prod-box-list .preciopromo, #content-in .prod-box-list p.desc{
+		display: block;
+		clear: both;
+		width: 95%;
+		text-align: center;
+	}
+	#content-in .category-menu ul li{
+		margin:5px;
+		line-height: auto;
+	}
+	#menupromociones{
+		background-color: white;
+		width: 92%;
+		padding: 10px 4% 0px 4%;
+	}
+	#left-content .imprimir_cupon{
+			width: 100%;
+		}
+	#left-content{
+			width: 92%;
+	}
+	.resultados-bloque .titleimg img{
+			width: 100%;
+	}
+	select.susc {
+		margin: 5px 0px;
+		width: 70%;
+	}
+	.infoconsulta .imagen, .infoconsulta .consulta{
+		float: none;
+		width: 92%;
+	}
+	.infoconsulta .imagen{
+		width: 98%;
+	}
+	.privilegios textarea{
+		width: 98%;
+		height: 25px;
+		margin: 10px -5px 5px 0px;
+		height: 80px;
+	}
+	.privilegios input[type="submit"]{
+		width: 100%;
+		margin: 10px 0px 5px 0px;
+	}
+			li.azul{
+			text-align: center !important;
+			margin-left: 30%;
+	}
+	.phenix-wrapper{
+		height: 100%;
+	}
+	.phenix-item img{
+		margin-right: 0px;
+		width: 260px !important;
+		height: auto;
+	}
+	.phenix-item img.imgtip{
+		width: auto !important;
+		float: none !important;
+		margin-top: -10px !important;
+	}
+	.phenix-item .ptip{
+		margin-bottom: 20px !important;
+	}
+	.phenix-item .img{
+		position: relative !important;
+		display: block !important;
+		float: none !important;
+		clear: both !important;
+		height: 100% !important;
+		margin-bottom: 15px;
+	}
+	.phenix-item .article-one .img, .phenix-item .article-one .img img{
+		float: none !important;
+		position: relative;
+		width: 100%;
+		height: auto;		
+	}
+}
+

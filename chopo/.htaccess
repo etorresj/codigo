@@ -1,0 +1,5 @@
+Options +FollowSymLinks -MultiViews
+# Turn mod_rewrite on
+RewriteEngine On
+#RewriteBase /
+RewriteRule ^([^/]*)/([^/]*)/([^/]*)\.html$ /promocion.php?codigoPromo=$1&region=$2&keyword=$3 [L]

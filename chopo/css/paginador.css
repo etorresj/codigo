@@ -1,0 +1,48 @@
+
+.paginador {
+	height:15px;
+	float:left;
+	padding:6px;
+	margin-right:1px;
+	margin-top:0px;
+	margin-bottom:10px;
+	background-image: url(img/green2.jpg);
+	
+	/* CSS3 Rounded Corners */
+-moz-border-radius:6px;
+-webkit-border-radius:6px;
+border-radius:6px;
+	
+/* CSS3 Box Shadow */
+-moz-box-shadow:0 0 5px #ccc;
+-webkit-box-shadow:0 0 5px #ccc;
+box-shadow:0 0 5px #ccc;
+}
+a.paginador {color:#fff; text-decoration:none;}
+a.paginador:hover {
+	color: #333333;
+	text-decoration: none;
+}
+
+
+.paginador_act {
+	height:15px;
+	float:left;
+	padding:6px;
+	margin-right:1px;
+	margin-top:0px;
+	background:#c0c0c0;
+	
+	/* CSS3 Rounded Corners */
+-moz-border-radius:6px;
+-webkit-border-radius:6px;
+border-radius:6px;
+	
+/* CSS3 Box Shadow */
+-moz-box-shadow:0 0 5px #ccc;
+-webkit-box-shadow:0 0 5px #ccc;
+box-shadow:0 0 5px #ccc;
+}
+a.paginador_act {color:#fff; text-decoration:none;}
+a.paginador_act:hover {color:#fff; text-decoration:none;}
+
